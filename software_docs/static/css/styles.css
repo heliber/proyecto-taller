@@ -1,0 +1,112 @@
+/* Estilos del menú principal */
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu > li {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+}
+
+ul.submenu > li {
+    margin: 5px 0;
+}
+
+ul.submenu > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/*Ajustar el CSS (Opcional) para ajustar mejor la posición o el tamaño del logo*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00aaff; /* Color de fondo de la barra de navegación */
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Ajusta la altura máxima del logo */
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------------------------*/
+
+body {
+    background-color: #eaf6ff;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+button {
+    border-radius: 50px;
+}
+
+
+body {
+    background: url('/static/img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+/*--------------------------------------------*/
+.navbar-nav .nav-item {
+    margin-left: 15px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000;
+  }
+  
+  .navbar-nav img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }

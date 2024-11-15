@@ -1,0 +1,16 @@
+{% extends 'documentation/base.html' %}
+
+{% block content %}
+    <h2>Crear Especificación</h2>
+    <p>Documento que detalla los requisitos funcionales y no funcionales del software.</p>
+    <form method="POST">
+     {% csrf_token %}
+     {{ form.media }}  <!-- Esto carga los archivos necesarios de CKEditor -->
+     {{ form.as_p }}  <!-- Esto incluirá los campos de título y contenido -->
+     <input type="submit" value="Guardar">
+    </form>
+{% endblock %}
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('id_contenido');  // Reemplaza el campo con CKEditor
+</script>

@@ -1,0 +1,13 @@
+{% extends 'documentation/base.html' %}
+<title>{% block title %}Requisitos{% endblock %}</title>
+{% block content %}
+    <h1>Documentación de Requisitos</h1>
+    <p>Aquí puedes documentar los requisitos del software, </p>
+    <p>incluyendo especificaciones, historias de usuario, y casos de uso.</p>
+    <right>  
+        <li><a href="{% url 'especificacion' %}">especificacion</a></li>
+        <li><a href="#">historias de usuario</a></li>
+        <li><a href="#">casos de uso</a></li>
+        
+    </right>
+    {% endblock %}
